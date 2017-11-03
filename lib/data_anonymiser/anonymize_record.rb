@@ -1,6 +1,3 @@
-require 'rujitsu/range'
-
-
 class DataAnonymiser::AnonymizeRecord < ActiveJob::Base
 
   def perform(record: nil, attribute: nil)
