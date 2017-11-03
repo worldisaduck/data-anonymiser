@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "data/anonymiser/version"
+require "data_anonymiser/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "data-anonymiser"
-  spec.version       = Data::Anonymiser::VERSION
+  spec.version       = DataAnonymiser::VERSION
   spec.authors       = ["Pavel Belyaev"]
   spec.email         = ["worldisaduck@gmail.com"]
 
@@ -33,4 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
+  spec.add_development_dependency "mocha", "~> 1.2.1"
+
+  spec.add_dependency "activejob", "~> 5.1.4"
+  spec.add_dependency "rujitsu", "~> 0.4.0"
 end
